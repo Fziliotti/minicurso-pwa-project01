@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- AQUI DEVE CONTER OS METAS PARA O "SEO" DO SITE -->
+    <title>Título do seu PWA aqui</title>
+
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./sw.js")
+          .then(function(registration) {
+            console.info(
+              "O registro do service worker deu certo com o escopo: ",
+              registration.scope
+            );
+          })
+          .catch(function(err) {
+            console.error("O registro do service worker não deu certo.. ", err);
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- AQUI VOCÊ DEVE PENSAR NO HTML SEMÂNTICO -->
+    <header class="header">
+      <h1 class="headerTitle">Meu primeiro PWA</h1>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1 class="introTitle">
+          Site criado por __________ no minicurso de PWA.
+        </h1>
+      </section>
+
+      <section class="images">
+        <h1 class="imagesTitle">
+          Galeria de fotos
+        </h1>
+
+        <!-- AS IMAGENS DO SITE DEVEM SEMPRE ESTAREM OTIMIZADAS -->
+        <div class="imagesGrid">
+          <img src="./imgs/1.jpg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/2.jpg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/3.jpg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/4.jpg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/5.jpg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/6.jpg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/7.jpeg" alt="Cachorrinho Legal" height="400px" />
+          <img src="./imgs/8.jpg" alt="Cachorrinho Legal" height="400px" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
