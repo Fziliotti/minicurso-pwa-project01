@@ -1,4 +1,4 @@
-var versao = 10;
+var versao = 11;
 var arquivos = [
   "./css/style.css",
   "./js/main.js",
@@ -10,6 +10,8 @@ var arquivos = [
   "./imgs/6.jpg",
   "./imgs/7.jpeg",
   "./imgs/8.jpg",
+  "./imgs/bg.jpg",
+  "./imgs/pwa.svg",
   "./offline/index.html"
 ];
 

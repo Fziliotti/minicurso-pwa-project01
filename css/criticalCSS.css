@@ -1,0 +1,58 @@
+
+.criticalContent {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  height: 400px;
+  background: url("../imgs/bg.jpg") no-repeat;
+  overflow-y:none;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.criticalContent .criticalItem {
+  display: block;
+  position: absolute;
+  animation: effectCritical 8s infinite reverse 0s;
+}
+
+@keyframes effectCritical {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  15% {
+    top: 45%;
+    left: 45%;
+    transform: scale(2.5);
+  }
+
+  35% {
+    top: 0%;
+    left: 80%;
+    transform: scale(1);
+  }
+  50% {
+    top: 60%;
+    left: 60%;
+    transform: scale(2.0);
+  }
+  70% {
+    top: 45%;
+    left: 45%;
+    transform: scale(1);
+  }
+
+  85% {
+    top: 60%;
+    left: 5%;
+    transform: scale(2.0);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: scale(1);
+  }
+}
